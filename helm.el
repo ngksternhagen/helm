@@ -3559,7 +3559,7 @@ It is used for narrowing list of candidates to the
       ;; candidates.
       ;; NOTE that this next block of code is returning nil on async sources,
       ;; the candidates being processed directly in `helm-output-filter'
-      ;; process-filter. 
+      ;; process-filter.
       (helm-process-filtered-candidate-transformer
        ;; Using in-buffer method or helm-pattern is empty
        ;; in this case compute all candidates.
@@ -5279,7 +5279,7 @@ Acceptable values of BUFFER-SPEC:
 
 - nil (omit)
   Only return the candidates buffer of current source if found.
-  
+
 - A buffer
   Register a buffer as a candidates buffer.
   The buffer needs to exists, it is not created.

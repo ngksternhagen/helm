@@ -65,7 +65,7 @@ When nil all buffers are considered related to `current-buffer'."
   :group 'helm-dabbrev
   :type 'function)
 
-(defcustom helm-dabbrev-major-mode-assoc nil 
+(defcustom helm-dabbrev-major-mode-assoc nil
   "Major mode association alist.
 This allow helm-dabbrev searching in buffers with the associated `major-mode'.
 e.g \(emacs-lisp-mode . lisp-interaction-mode\)
@@ -179,7 +179,7 @@ but the initial search for all candidates in buffer(s)."
                         do (push match result)))))))
     (cl-loop for buf in (if all (helm-dabbrev--buffer-list)
                           (list (current-buffer)))
-          
+
           do (with-current-buffer buf
                (when (or minibuf ; check against all buffers when in minibuffer.
                          (if helm-dabbrev-related-buffer-fn

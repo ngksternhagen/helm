@@ -48,9 +48,9 @@ Should take one arg: the string to display."
     (cl-loop for (f . a) in '((eldoc-current-symbol .
                                elisp--current-symbol)
                               (eldoc-fnsym-in-current-sexp .
-                               elisp--fnsym-in-current-sexp) 
+                               elisp--fnsym-in-current-sexp)
                               (eldoc-get-fnsym-args-string .
-                               elisp-get-fnsym-args-string) 
+                               elisp-get-fnsym-args-string)
                               (eldoc-get-var-docstring .
                                elisp-get-var-docstring))
              unless (fboundp f)

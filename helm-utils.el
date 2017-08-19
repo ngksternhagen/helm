@@ -108,7 +108,7 @@ In this case last position is added to the register
     ("&yen"     . 165)  ;; ¥
     ("&brvbar;" . 166)  ;; ¦
     ("&sect;"   . 167)  ;; §
-    ("&uml;"    . 32)   ;; SPC 
+    ("&uml;"    . 32)   ;; SPC
     ("&copy;"   . 169)  ;; ©
     ("&ordf;"   . 97)   ;; a
     ("&laquo;"  . 171)  ;; «
@@ -122,7 +122,7 @@ In this case last position is added to the register
     ("&micro;"  . 956)  ;; μ
     ("&para;"   . 182)  ;; ¶
     ("&middot;" . 183)  ;; ·
-    ("&cedil;"  . 32)   ;; SPC 
+    ("&cedil;"  . 32)   ;; SPC
     ("&sup1;"   . 49)   ;; 1
     ("&ordm;"   . 111)  ;; o
     ("&raquo;"  . 187)  ;; »
@@ -437,7 +437,7 @@ Return nil on valid file name remote or not."
   (let* ((str (helm-basename fname))
          (split (split-string str ":" t))
          (meth (car (member (car split)
-                            (helm-ff-get-tramp-methods))))) 
+                            (helm-ff-get-tramp-methods)))))
     (when meth (car (last split)))))
 
 (cl-defun helm-file-human-size (size &optional (kbsize helm-default-kbsize))

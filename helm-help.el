@@ -122,7 +122,7 @@ of buffer, it is interesting to narrow down to one directory for example, subseq
 entered after a space will match on buffer-name only.
 Note that negation is not supported for matching on buffer-file-name.
 You can specify more than one directory starting from helm v1.6.8
- 
+
 **** Fuzzy matching
 
 Note that if `helm-buffers-fuzzy-matching' is non--nil you will have
@@ -453,7 +453,7 @@ After this placeholder you can use a search and replace syntax ala sed:
 You can remove substring part of string represented by placeholder:
 
     \"\\@:<from>:<to>\"
- 
+
 - A special character representing a number which is incremented:   \"\\#\"
 
 - shortcut for `upcase', `downcase' and `capitalize'
@@ -817,7 +817,7 @@ NOTE: On a terminal C-<backspace> may not work, use in this case C-c <backspace>
 
 **** Create a new directory and a new file at the same time
 
-You can create a new directory and a new file at the same time, 
+You can create a new directory and a new file at the same time,
 just write the path in prompt and press <RET>.
 E.g. You can create \"~/new/newnew/newnewnew/my_newfile.txt\".
 
@@ -1214,9 +1214,9 @@ to modify occurences in your buffer.
 When using async (if you have installed from MELPA you do), only helm, helm-core,
 and magit are compiled asynchronously, if you want all your packages compiled async,
 add to your init file:
-    
+
      (setq async-bytecomp-allowed-packages '(all))
-    
+
 *** Upgrade elisp packages
 
 On initial start (when emacs is fetching packages on remote), if helm find

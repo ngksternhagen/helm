@@ -81,7 +81,7 @@
    (filtered-candidate-transformer
     :initform
     (lambda (candidates _sources)
-      (cl-loop 
+      (cl-loop
        for i in candidates
        collect
        (cond ((string-match "\\`~/?" helm-ec-target)

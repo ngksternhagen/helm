@@ -810,7 +810,7 @@ See documentation of `completing-read' and `all-completions' for details."
                 def-com
                 (apply def-com def-args))
                (;; Use by default a cands-in-buffer handler which
-                ;; should work everywhere, it is much faster. 
+                ;; should work everywhere, it is much faster.
                 t
                 (helm-completing-read-default-handler
                  prompt collection predicate require-match

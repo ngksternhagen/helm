@@ -266,7 +266,7 @@ This is a command for `helm-kill-ring-map'."
 (defvar helm-source-mark-ring
   (helm-build-sync-source "mark-ring"
     :candidates #'helm-mark-ring-get-candidates
-    :action '(("Goto line" . helm-mark-ring-default-action)) 
+    :action '(("Goto line" . helm-mark-ring-default-action))
     :persistent-help "Show this line"
     :group 'helm-ring))
 

@@ -63,7 +63,7 @@
 
 (defcustom helm-boring-file-regexp-list
   (mapcar (lambda (f)
-            (let ((rx (rx-to-string f t))) 
+            (let ((rx (rx-to-string f t)))
               (if (string-match-p "[^/]$" f)
                   (concat rx "$") rx)))
           completion-ignored-extensions)
@@ -775,7 +775,7 @@ This reproduce the behavior of \"cp --backup=numbered from to\"."
 
 (defun helm-find-files-ediff-files-1 (candidate &optional merge)
   "Generic function to ediff/merge files in `helm-find-files'."
-  (let* ((helm-dwim-target 'next-window) 
+  (let* ((helm-dwim-target 'next-window)
          (bname  (helm-basename candidate))
          (marked (helm-marked-candidates :with-wildcard t))
          (prompt (if merge "Ediff Merge `%s' With File: "
